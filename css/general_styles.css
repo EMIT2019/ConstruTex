@@ -1,0 +1,40 @@
+/*Styles for scroll bar*/
+::-webkit-scrollbar {
+  width: 10px;
+  height:10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background:url('../assets/other_images/flower_background.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-attachment:fixed;
+}
+
+.content {
+  width:100%;
+  height:fit-content;
+}
+
+/*Responsive*/
+@media only screen and (min-width:320px) and (max-width:430px) {
+  body {
+    overflow-x:hidden;
+  }
+}
+/*Styles for scroll bar*/

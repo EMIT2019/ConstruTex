@@ -1,0 +1,224 @@
+html {
+    margin:0;
+    padding:0;
+}
+
+body {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+/*Header*/
+header {
+    width:100%;
+    height:80px;
+    /*box-shadow: 0px 5px 10px 1px #00000031;*/
+    background-color:#fff;
+}
+
+header nav {
+    width:40%;
+    height:inherit;
+    margin:auto;
+}
+
+header nav ul {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:inherit;
+    display:flex;
+    flex-direction:row;
+}
+
+header nav ul li {
+    margin:0;
+    padding:0;
+    width:25%;
+    height:inherit;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    text-align:center;
+    font-family:'Arial';
+    color:#25455e;
+    font-weight:bolder;
+    transition-duration:.4s;
+    cursor:pointer;
+}
+
+header nav ul li:hover {
+    background-color:#25455e;
+    color:#fff;
+}
+
+/*JS Styles*/
+.fixed_menu {
+    position:fixed;
+    top:-80px;
+    left:0;
+    z-index:100;
+    box-shadow: 0px 5px 10px 1px #00000031;
+    animation: moveDown 0.4s;
+    animation-timing-function:linear;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes moveDown {
+    0% {
+        position:fixed;
+        top:-80px;
+        left:0;
+    }
+
+    100% {
+        position:fixed;
+        top:0px;
+        left:0;
+    }
+}
+/*JS Styles*/
+
+.btn_deploy_mob_menu {
+    display:none;
+}
+
+/*Responsive*/
+/*Mobile responsive styles*/
+@media only screen and (min-width:320px) and (max-width:430px) {
+    header {
+        width:100%;
+        background-color:#25455ee0;
+        height:fit-content;
+        position:fixed;
+        left:-100%;
+        z-index:100;
+    }
+
+    header nav {
+        width:100% !important;
+    }
+
+    header > nav > ul {
+        width:100% !important;
+        height:55vh !important;
+        display:flex;
+        flex-direction:column;
+    }
+
+    header > nav > ul > li {
+        width:100%;
+        height:calc(100vh / 5);
+        font-size:25px;
+        border-bottom:0.5px solid #fff;
+        color:#fff;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .fixed_menu_mob {
+        box-shadow: 0px 5px 10px 1px #00000031;
+        animation: toRigth 0.4s;
+        animation-timing-function:linear;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+    }
+
+    .hide_fixed_menu_mob {
+        box-shadow: 0px 5px 10px 1px #00000031;
+        animation: toLeft 0.4s;
+        animation-timing-function:linear;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes toRigth {
+        0% {
+            position:fixed;
+            top:0;
+            left:-100%;
+        }
+    
+        100% {
+            position:fixed;
+            top:0;
+            left:0%;
+        }
+    }
+
+    @keyframes toLeft {
+        0% {
+            position:fixed;
+            top:0;
+            left:0;
+        }
+    
+        100% {
+            position:fixed;
+            top:0;
+            left:-100%;
+        }
+    }
+
+    .btn_deploy_mob_menu {
+        display:block;
+        width:50px;
+        height:50px;
+        position:fixed;
+        top:20px;
+        right:30px;
+        z-index:99;
+    }
+
+    .btn_deploy_mob_menu > img {
+        width:inherit;
+        height:inherit;
+    }
+
+    .move_menu_button {
+        animation: move_button 0.4s;
+        animation-timing-function:linear;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+    }
+
+    .move_menu_button_back {
+        animation: move_button_back 0.4s;
+        animation-timing-function:linear;
+        animation-fill-mode:forwards;
+        animation-iteration-count: 1;
+    }
+
+    /*JS styles*/
+    @keyframes move_button {
+        0% {
+            position:fixed;
+            top:20px;
+        }
+    
+        100% {
+            position:fixed;
+            top:calc(55vh + 20px);
+        }
+    }
+
+    @keyframes move_button_back {
+        0% {
+            position:fixed;
+            top:calc(55vh + 20px);
+        }
+    
+        100% {
+            position:fixed;
+            top:20px;
+        }
+    }
+    /*JS styles*/
+}
+/*Responsive*/
+/*Header*/

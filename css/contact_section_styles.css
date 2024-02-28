@@ -1,0 +1,304 @@
+/*Contact section styles*/
+.contact_us {
+    width:100%;
+    height:fit-content;
+    margin-top:80px;
+}
+
+.content_section {
+    width:inherit;
+    height:inherit;
+    display:flex;
+    align-items:center;
+    box-shadow:5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.forms_section {
+    width:inherit;
+    height:700px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.forms_section > div {
+    height:inherit;
+}
+
+#map {
+    height:inherit;
+    position:relative;
+    z-index:0;
+}
+
+.forms_section > div:nth-child(2) {
+    height:inherit;
+    background:url(../assets/other_images/form_background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:500px;
+    background-attachment:fixed;
+    display:flex;
+    justify-content:center;
+}
+
+.form_title_section {
+    height:fit-content;
+}
+/*Contact Form Section styles*/
+.form_title_section h1 {
+    color:#25455e;
+    font-family:'Open Sans', sans-serif;
+    font-size:40px;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.form_title_section p {
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family:'Open Sans', sans-serif;
+    text-align:center;
+    font-style:italic;
+    color:#515151;
+}
+
+.data_form_section {
+    width:70%;
+    height:inherit;
+    background-color:rgba(255, 255, 255, 0.856);
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:flex-end;
+}
+
+.data_form_section form {
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+/*Using the calc function to add a 15px padding to the inputs without affecting their width by removing it with calc*/
+.data_form_section form input:nth-child(1) {
+    width:calc(39% - 15px);
+    margin-right:1%;
+}
+
+.data_form_section form input:nth-child(2) {
+    width:calc(39% - 15px);
+}
+
+.data_form_section form input {
+    width:calc(80% - 15px);
+    height:50px;
+    margin-top:20px;
+    border-radius:7px;
+    padding-left:15px;
+    border:1px solid #d8d8d8;
+    font-size:15px;
+    font-family:'Open Sans', sans-serif;
+}
+
+.data_form_section form input:focus {
+    outline:none;
+}
+
+.data_form_section form textarea {
+    width:calc(80% - 15px);
+    height:100px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border-radius:7px;
+    padding-left: 15px;
+    padding-top:15px;
+    border:1px solid #d8d8d8;
+    font-size:15px;
+    font-family:'Open Sans', sans-serif;
+    resize:none;
+}
+
+.data_form_section form textarea:focus {
+    outline:none;
+}
+
+
+.data_form_section form input[type=submit] {
+    border:none;
+    background:#e24a43;
+    color:#fff;
+    font-size:20px;
+    font-weight:bolder;
+    cursor: pointer;
+    transition-duration:.2s;
+}
+
+.data_form_section form input[type=submit]:hover {
+    width:81%;
+}
+/*Styles for Whatsapp Direct Message*/
+.alternative_text {
+    width:100%;
+    height:fit-content;
+}
+
+.alternative_text p {
+    margin:0;
+    padding:0;
+    text-align:center;
+    color:#25455e;
+    font-size:18px;
+    font-family:'Open Sans', sans-serif;
+    font-weight:bolder;
+}
+
+.whatsapp_button {
+    width:100%;
+    height:fit-content;
+    background-color:#25d366;
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+}
+
+.whatsapp_button img {
+    width:250px;
+}
+/*Styles for Whatsapp Direct Message*/
+/*Contact Form Section styles*/
+
+/*Responsive*/
+@media only screen and (min-width:320px) and (max-width:430px) {
+    .contact_us {
+        height:fit-content;
+    }
+
+    .contact_us > .content_section {
+        height:fit-content;
+    }
+
+    .forms_section {
+        height:fit-content;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .data_form_section_container {
+        background-position:50% !important;
+    }
+
+    #map {
+        width:100%;
+    }
+
+    .data_form_section {
+        width:100%;
+        padding-top:20px;
+        height:inherit;
+        background-color:rgba(255, 255, 255, 0.856);
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+    }
+
+    .form_title_section {
+        width:90%;
+        height:fit-content;
+    }
+    
+    .data_form_section form {
+        width:90%;
+        height:fit-content;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .data_form_section form input {
+        width:100%;
+        height:50px;
+        margin-top:20px;
+        border-radius:7px;
+        padding-left:15px;
+        border:1px solid #d8d8d8;
+        font-size:15px;
+        font-family:'Open Sans', sans-serif;
+    }
+
+    .data_form_section form input:nth-child(1) {
+        width:100%;
+    }
+    
+    .data_form_section form input:nth-child(2) {
+        width:100%;
+    }
+
+    .data_form_section form textarea {
+        width:100%;
+        height:100px;
+        margin-top:20px;
+        margin-bottom:20px;
+        border-radius:7px;
+        padding-left: 15px;
+        padding-top:15px;
+        border:1px solid #d8d8d8;
+        font-size:15px;
+        font-family:'Open Sans', sans-serif;
+        resize:none;
+    }
+
+    .data_form_section form input[type=submit] {
+        margin-bottom:20px;
+        border:none;
+        background:#e24a43;
+        color:#fff;
+        font-size:20px;
+        font-weight:bolder;
+        cursor: pointer;
+        transition-duration:.2s;
+    }
+
+    .alternative_text {
+        width:80%;
+        height:fit-content;
+        margin-bottom:20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .contact_us {
+        height:fit-content;
+    }
+
+    .contact_us > .content_section {
+        height:fit-content;
+    }
+
+    .forms_section {
+        height:fit-content;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .data_form_section_container {
+        background-position:50% !important;
+    }
+
+    #map {
+        height:450px;
+    }
+}
+/*Responsive*/
+/*Contact section styles*/
